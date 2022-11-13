@@ -3,6 +3,8 @@
 
 /* Custom CSS */
 
+/* Skills Section CSS */
+
 .skills {
 	max-width: 68.75rem;
 	margin: auto;
@@ -30,9 +32,53 @@
 	box-shadow: 0 3px 10px #4fb2aa;
 	padding: 20px;
 	margin: 10px;
+	transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
 
+  .icon-card:hover {
+	box-shadow: 0 3px 10px #1be7d6;
+  }
 
+/* Back to Top Button */
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: solid #4fb2aa;
+	outline: none;
+	background-color: transparent;
+	color: #4fb2aa;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 11px;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  #myBtn:hover {
+	border-color: #1be7d6;
+	color: #1be7d6;
+  }
+
+/* Copyright text color change on hover */
+.copyright li {
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	
+	color: rgba(182, 182, 178, 1);
+	text-decoration: none;
+}
+
+	.copyright li:hover {
+		border-bottom-color: transparent;
+		color: #1be7d6 !important;
+		text-decoration: none;
+	}
 
 
 /*
@@ -2560,7 +2606,7 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #3ec2b7;
+				background-color: #1be7d6;
 				border-color: #4fb2aa;
 			}
 
@@ -2568,8 +2614,8 @@ input, select, textarea {
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #3eb08f;
-				border-color: #3eb08f;
+				background-color: #4fb2aa;
+				border-color: #4fb2aa;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2626,8 +2672,8 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background-color: #014b80;
-		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/skyline.jpg");
+		background-attachment: scroll,								fixed;
+		background-image: url("images/overlay.png"), url("../../images/palm.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -3088,6 +3134,7 @@ input, select, textarea {
 
 			#header {
 				background-attachment: scroll;
+				background-image: url("images/overlay.png"), url("../../images/canal.jpg");
 				background-position: top left, center center;
 				background-size: auto,		cover;
 				left: auto;
@@ -3112,7 +3159,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #014b80;
-				background-image: url("images/overlay.png"), url("../../images/skyline.jpg");
+				background-image: url("images/overlay.png"), url("../../images/canal.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;

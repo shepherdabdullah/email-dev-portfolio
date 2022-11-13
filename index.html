@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body class="is-preload">
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Header -->
     <header id="header">
       <div class="inner">
@@ -17,8 +19,8 @@
           ><img src="images/portfolio.jpg" alt=""
         /></a>
         <h1>
-          <strong>Abdullah Mian</strong>,<span style="color: #4fb2aa;"> Email Developer</span><br />
-          Based in <span style="color: #4fb2aa;">New Orleans</span>
+          <strong>Abdullah Mian</strong>,<span style="color: #1be7d6;"> Email Developer</span><br />
+          Based in <span style="color: #1be7d6;">New Orleans</span>
         </h1>
       </div>
     </header>
@@ -30,13 +32,13 @@
         <header class="major">
           <h2 style="color:#4fb2aa;">About</h2>
         </header>
-        <p  style="color: #;">
+        <p>
           I am a career oriented HTML Email Developer based in New Orleans, LA
 		  with practical skills in Email Design, Development, and Marketing.
 		  <br>
       <br>
-		  I am proficient in hand coding and testing of HTML emails as well as working with frameworks especially MJML
-      and prioritize UX including responsiveness and accessibility for all.	  
+		  I am proficient in the hand coding and testing of HTML emails as well as working with frameworks especially MJML
+      and prioritize UX including responsiveness and accessibility for all. I strive for efficacy  
       <br>
       <br>
 		  I have a strong fundamental competence in the necessary and auxilliary tools of the trade ranging from 
@@ -44,16 +46,13 @@
 		  <br>
       <br>
 		  As well as working effectively within teams and possessing strong communication skills I am comfortable with 
-		  solitary assignments and have confidence in my decision making with a profound respect and appreciation for the opportunity to take the initiative.
+		  solitary assignments and have confidence in my decision making while holding a profound respect and appreciation for the opportunity to take the initiative.
 		  <br>
       <br>
 		  I am eager to take on big challenges and am always looking to prove and improve myself in all that I do.
-		  
-		  
-
         </p>
-        <ul class="actions">
-          <li><a href="#three" class="button">Contact Me</a></li>
+        <ul class="actions section-button">
+          <li><a href="#skills" class="button">View My Skills</a></li>
         </ul>
       </section>
 
@@ -85,7 +84,7 @@
 
           <p>Strong fundamental knowledge of CSS including CSS-grid and FlexBox as well as CSS <br>
             Preprocessors SASS/SCSS. Strong Knowledge of In-line CSS for Email Development <br>
-            Competent JavaScript Basic and Intermediate Algorithm Scripting. <br>
+            Competent JavaScript Basic and Intermediate Algorithm Scripting ability. <br>
             Knowledge of JQuery.</p>
 
           <div class="skills-wrapper">
@@ -110,7 +109,8 @@
               />
             </div>
 
-            <p>Basic knowledge on Email Marketing acquired through paid training/courses. <br> Fundamental skills in Email deployment, automation, and analytics with <br> MailChimp, Salesforce, and Marketo.</p>
+            <p>Basic knowledge on Email Marketing acquired through paid training/courses. <br> Fundamental skills in Email deployment, automation, and analytics with <br> MailChimp, Salesforce, and Marketo.
+              Relevant knowedge of design<br> software such as PhotoShop, Express, Gimp, and Sketch.</p>
   
           <div class="second-set animate__animated animate__pulse">
             <img
@@ -133,8 +133,8 @@
             />
           </div>
 
-          <p>Good handle of MJML and Foundation Frameworks for Email development. <br> Solid fundamentals to build HTML Emails from scratch and to add hand coded <br> sections in MJML 
-          followed by rigorous testing with Litmus and Email on Acid.</p>
+          <p>Good handle of MJML and Foundation Frameworks for Email development. <br> Solid fundamentals to build HTML Emails from scratch and to add hand <br> coded sections in MJML 
+          followed by rigorous testing with Litmus and<br> Email on Acid.</p>
 
           <div class="skills-wrapper">
             <div class="first-set animate__animated animate__pulse">
@@ -158,8 +158,11 @@
               />
             </div>
 
-            <p>Strong working knowledge of tools like Git, Node/NPM, WSL, VMs and Vagrant. <br>
-              Relevant knowedge of design software such as PhotoShop, Express, Gimp, and Sketch.</p>
+            <p>Strong foundation in the use of tools like Git, Node/NPM, VMs and Vagrant. <br>
+              </p>
+              <ul class="actions">
+                <li><a href="#two" class="button">View My Work</a></li>
+              </ul>
         </div>
       </section>
 
@@ -218,6 +221,9 @@
           </article>
 		  Comment out for now-->
         </div>
+        <ul class="actions">
+          <li><a href="#three" class="button">Contact Me</a></li>
+        </ul>
       </section>
 
       <!-- Contact -->
@@ -270,17 +276,17 @@
             <ul class="labeled-icons">
               <li>
                 <h3 style="color:#4fb2aa;" class="icon solid fa-home">
-                  <span class="label">Address</span>
+                  <span class="label contact-symbol">Address</span>
                 </h3>
                 New Orleans, LA<br />
                 United States
               </li>
               <li>
                 <h3 style="color:#4fb2aa;" class="icon brands fa-linkedin">
-                  <span class="label">Linkedin</span>
+                  <span class="label contact-symbol">Linkedin</span>
                 </h3>
                 For the quickest response time get in touch with me on
-				<a href="#">Linkedin</a>
+				<a style="color:#4fb2aa" href="#">Linkedin</a>
               </li>
             </ul>
           </div>
@@ -311,6 +317,27 @@
     </footer>
 
     <!-- Scripts -->
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.poptrox.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
